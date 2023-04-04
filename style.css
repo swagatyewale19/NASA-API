@@ -1,0 +1,127 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+  color: white;
+  background-color: black;
+  margin: 0%;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+label {
+  margin-right: 10px;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+input {
+  border: 1px solid #ccc;
+  padding: 5px;
+}
+
+button {
+  background-color: gray;
+  border: none;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+}
+
+/* Positioning the current image container and its children */
+#current-image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  background-color: black;
+
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#current-image-container img {
+  height: 75vh;
+  margin-bottom: 20px;
+  background-color: black;
+  color: white;
+  width: 100%;
+}
+
+#current-image-container p {
+  text-align: center;
+  font-size: 1 rem;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0 20px;
+  background-color: black;
+  color: white;
+  height: 75vh;
+  ;
+}
+
+/* Making the image and its description responsive */
+@media only screen and (min-width: 600px) {
+  #current-image-container {
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  #current-image-container img {
+    max-width: 50%;
+    margin: 0 20px 0 0;
+  }
+
+  #current-image-container p {
+    max-width: 50%;
+    font-size: 1.5rem;
+  }
+}
+
+#search-history {
+  list-style: none;
+  margin: 20px auto;
+  padding: 0;
+  max-width: 60vh;
+  display: flex;
+  flex-wrap: wrap;
+  width: 150px;
+  justify-content: center;
+  align-items: center;
+}
+
+#search-history li {
+  display: inline-block;
+  margin-right: 10px;
+  cursor: pointer;
+  color: blue;
+  max-width: 60vh;
+}
+#clear-search-history {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: red;
+  background-color: aqua;
+  font-weight: bolder;
+  margin-left: 40%;
+  margin-right: 40%;
+  padding: 30px 100px ;
+
+}
